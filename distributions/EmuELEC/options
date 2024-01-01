@@ -260,7 +260,7 @@
 # start SX05RE added options
 
 LAKKA_MIRROR="http://sources.lakka.tv"
-
+# REMOVIDOS 
 LIBRETRO_CORES="2048 \
 81 \
 a5200 \
@@ -277,7 +277,6 @@ cannonball \
 cap32 \
 daphne \
 dinothawr \
-dosbox-svn \
 easyrpg \
 fake_08 \
 fbalpha2012 \
