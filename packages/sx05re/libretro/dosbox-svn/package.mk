@@ -19,7 +19,7 @@
 ################################################################################
 
 PKG_NAME="dosbox-svn"
-PKG_VERSION="c23be7769518d753378307996de35e204d188c63"
+PKG_VERSION="53ca2f6303a652d129321cfc521f000cd7ec5531"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPLv2"
@@ -36,6 +36,10 @@ PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
 PKG_BUILD_FLAGS="-lto"
 PKG_TOOLCHAIN="make"
+
+pre_make_target() {
+  git submodule update --init
+}
 
 make_target() {
   if [ "$ARCH" = "aarch64" ]; then 
